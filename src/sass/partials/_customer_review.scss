@@ -158,11 +158,13 @@
     align-items: center;
     gap: 18px;
   }
+
   &__item {
     display: flex;
     align-items: center;
     line-height: 1;
   }
+
   &__btn {
     padding: 6px;
     background-color: $background-color-review-btn;
@@ -173,6 +175,12 @@
     &--active {
       background-color: transparent;
       padding: 0;
+    }
+  }
+
+  &__svg {
+    @include desktop {
+      height: 12px;
     }
   }
 }
